@@ -27,7 +27,7 @@ const Login = () => {
         e.preventDefault();
         // console.log(name,age,number,email,password);
         try {
-            const res = await fetch('https://ashutoshchatroom.herokuapp.com/login', {
+            const res = await fetch('http://localhost:5000/login', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify({ email, password }),

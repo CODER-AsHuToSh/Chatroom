@@ -7,7 +7,7 @@ const { OAuth2Client } = require('google-auth-library');
 dotenv.config();
 const client = new OAuth2Client(process.env.oath);
 var corsOptions = {
-    origin: 'https://brave-elion-16c499.netlify.app',
+    origin: 'http//localhost:3000',
     credentials: true,
     optionsSuccessStatus: 200 // For legacy browser support
 }
